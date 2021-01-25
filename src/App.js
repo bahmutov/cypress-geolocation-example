@@ -9,7 +9,7 @@ export default function App() {
   };
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
+      <h1>Where?</h1>
       <PlacesAutocomplete
         value={address}
         onSelect={handleAddress}
@@ -46,7 +46,7 @@ export default function App() {
 
                   if (idx !== suggestions.length - 1) {
                     return (
-                      <div
+                      <div data-cy="suggestion"
                         {...getSuggestionItemProps(suggestion, {
                           className: `${
                             suggestion.active
